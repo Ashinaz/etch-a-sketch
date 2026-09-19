@@ -12,3 +12,11 @@ function gridX(num) {
     container.appendChild(divGrid)
   }
 }
+
+function gridY(num, gridX) {
+  for (let i = 0; i < num; i++) {
+    let divGrid = document.createElement("div")
+    divGrid.classList.toggle("gridY")
+    gridX.appendChild(divGrid)
+  }
+}
