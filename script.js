@@ -11,6 +11,9 @@ const context = canvas.getContext("2d")
 canvas.height = container.offsetHeight
 canvas.width = container.offsetWidth
 let grid = 64
+let isDrawing = false
+let x = 0
+let y = 0
 
 function gridX(num) { 
   for (let i = 0; i < num; i++) {
