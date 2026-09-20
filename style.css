@@ -26,3 +26,8 @@ canvas{
   background-color: white;
   outline-style: solid;
 }
+
+.gridX{
+  display: flex;
+  flex-direction: column;
+}
