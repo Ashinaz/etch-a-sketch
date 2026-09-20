@@ -39,3 +39,21 @@ function startDrawing(e) {
   console.log(x)
   console.log(y)
 }
+
+function currentlyDrawing(e) {
+  if (isDrawing) {
+    draw(context, x, y, e.offsetX, e.offsetY)
+    x = e.offsetX
+    y = e.offsetY
+  }
+}
+
+function draw(context, x1, y1, x2, y2) {
+  context.beginPath()
+  context.strokeStyle = "red"
+  context.lineWidth = "10"
+  context.lineJoin = "round"
+  context.moveTo(x1, y1)
+  context.lineTo(x2, y2)
+  context.stroke()
+}
