@@ -57,3 +57,12 @@ function draw(context, x1, y1, x2, y2) {
   context.lineTo(x2, y2)
   context.stroke()
 }
+
+function stopDrawing(e) {
+  if (isDrawing) {
+    draw(context, x, y, e.offsetX, e.offsetY)
+    x = 0
+    y = 0
+    isDrawing = false
+  }
+}
