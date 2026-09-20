@@ -31,3 +31,11 @@ function gridY(num, gridX) {
     gridX.appendChild(divGrid)
   }
 }
+
+function startDrawing(e) {
+  x = e.offsetX
+  y = e.offsetY
+  isDrawing = true
+  console.log(x)
+  console.log(y)
+}
