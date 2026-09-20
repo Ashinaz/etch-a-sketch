@@ -31,3 +31,15 @@ canvas{
   display: flex;
   flex-direction: column;
 }
+
+button{
+  border-radius: 10px;
+  width: 140px;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  margin: 25px;
+  box-sizing: border-box;
+  background-color: purple;
+  color: white;
+}
