@@ -5,6 +5,7 @@ window.addEventListener("load", function () {
   container.addEventListener("mouseup", stopDrawing)
 })
 
+const button = document.querySelector("button")
 const container = document.querySelector(".container")
 const canvas = document.querySelector("#canvas")
 const context = canvas.getContext("2d")
@@ -66,3 +67,5 @@ function stopDrawing(e) {
     isDrawing = false
   }
 }
+
+button.addEventListener("click", newCanvas)
