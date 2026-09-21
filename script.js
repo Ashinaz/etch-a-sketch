@@ -97,3 +97,7 @@ function delGrid() {
     grid.remove()
   }
 }
+
+function delCanvas() {
+  context.clearRect(0, 0, canvas.height, canvas.width)
+}
