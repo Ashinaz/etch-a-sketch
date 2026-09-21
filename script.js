@@ -69,3 +69,20 @@ function stopDrawing(e) {
 }
 
 button.addEventListener("click", newCanvas)
+
+function newCanvas() {
+  let grid = parseInt(prompt("select new grid"))
+  let limit = 100
+  if (grid < limit) {
+    delGrid()
+    gridX(grid)
+    delCanvas()
+    console.log(grid)
+  } else {
+    grid = (prompt("Please select a grid lower than 100"))
+    delGrid()
+    gridX(grid)
+    delCanvas()
+    console.log(grid)
+  }
+}
