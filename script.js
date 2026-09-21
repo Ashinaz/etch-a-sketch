@@ -86,3 +86,14 @@ function newCanvas() {
     console.log(grid)
   }
 }
+
+function delGrid() {
+  const gridDivsX = document.querySelectorAll(".gridX")
+  const gridDivsY = document.querySelectorAll(".gridY")
+  for (grid of gridDivsX) {
+    grid.remove()
+  }
+  for (grid of gridDivsX) {
+    grid.remove()
+  }
+}
