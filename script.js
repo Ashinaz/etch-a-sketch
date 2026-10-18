@@ -3,7 +3,6 @@ window.addEventListener("load", function () {
   container.addEventListener("mousedown", startDrawing)
   container.addEventListener("mousemove", currentlyDrawing)
   container.addEventListener("mouseup", stopDrawing)
-  drawMode.addEventListener("click", switchMode)
 })
 
 const drawMode = document.querySelector("#drawMode")
