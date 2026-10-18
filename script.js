@@ -6,6 +6,11 @@ window.addEventListener("load", function () {
   drawMode.addEventListener("click", toggleCanvas)
 })
 
+function toggleCanvas() {
+  canvas.classList.toggle("turnOffCanvas")
+  newCanvas()
+}
+
 const drawMode = document.querySelector("#drawMode")
 const button = document.querySelector("button")
 const container = document.querySelector(".container")
