@@ -34,12 +34,12 @@ canvas{
 
 button{
   border-radius: 10px;
-  width: 140px;
-  height: 40px;
+  width: 200px;
+  height: 60px;
   font-size: large;
   font-weight: bold;
   margin: 25px;
   box-sizing: border-box;
-  background-color: purple;
+  background-color: lightpink;
   color: white;
 }
