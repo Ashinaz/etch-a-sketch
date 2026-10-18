@@ -5,6 +5,7 @@ window.addEventListener("load", function () {
   container.addEventListener("mouseup", stopDrawing)
 })
 
+const drawMode = document.querySelector("#drawMode")
 const button = document.querySelector("button")
 const container = document.querySelector(".container")
 const canvas = document.querySelector("#canvas")
