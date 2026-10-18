@@ -43,3 +43,8 @@ button{
   background-color: lightpink;
   color: white;
 }
+
+.turnOffCanvas{
+  pointer-events: none;
+  display: none;
+}
