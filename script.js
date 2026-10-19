@@ -5,6 +5,12 @@ window.addEventListener("load", function () {
   container.addEventListener("mouseup", stopDrawing)
   drawMode.addEventListener("click", toggleCanvas)
   button.addEventListener("click", newCanvas)
+  for(const grid of grids) {
+  grid.addEventListener("mousedown", startFill)
+  grid.addEventListener("mousemove", filling)
+  grid.addEventListener("mouseup", stopFilling)
+}
+
 })
 
 function toggleCanvas() {
@@ -46,8 +52,6 @@ function startDrawing(e) {
   x = e.offsetX
   y = e.offsetY
   isDrawing = true
-  console.log(x)
-  console.log(y)
 }
 
 function currentlyDrawing(e) {
