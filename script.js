@@ -4,6 +4,7 @@ window.addEventListener("load", function () {
   container.addEventListener("mousemove", currentlyDrawing)
   container.addEventListener("mouseup", stopDrawing)
   drawMode.addEventListener("click", toggleCanvas)
+  button.addEventListener("click", newCanvas)
 })
 
 function toggleCanvas() {
@@ -74,8 +75,6 @@ function stopDrawing(e) {
     isDrawing = false
   }
 }
-
-button.addEventListener("click", newCanvas)
 
 function newCanvas() {
   let grid = parseInt(prompt("select new grid"))
