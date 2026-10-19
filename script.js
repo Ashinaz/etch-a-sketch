@@ -30,6 +30,7 @@ let isDrawing = false
 let x = 0
 let y = 0
 const grids = document.querySelectorAll(".gridY")
+let isFill = false
 
 function gridX(num) { 
   for (let i = 0; i < num; i++) {
@@ -46,6 +47,10 @@ function gridY(num, gridX) {
     divGrid.classList.toggle("gridY")
     gridX.appendChild(divGrid)
   }
+}
+
+function startFill() {
+  isFill = true
 }
 
 function startDrawing(e) {
