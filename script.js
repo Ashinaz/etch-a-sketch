@@ -23,6 +23,7 @@ let grid = 64
 let isDrawing = false
 let x = 0
 let y = 0
+const grids = document.querySelectorAll(".gridY")
 
 function gridX(num) { 
   for (let i = 0; i < num; i++) {
