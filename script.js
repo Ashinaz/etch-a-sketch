@@ -8,8 +8,7 @@ window.addEventListener("load", function () {
   const grids = document.querySelectorAll(".gridY")
   for(const grid of grids) {
   grid.addEventListener("mousedown", startFill)
-  grid.addEventListener("mousemove", filling)
-  grid.addEventListener("mouseup", stopFilling)
+  grid.addEventListener("mouseover", isFilling)
 }
 
 })
@@ -51,6 +50,13 @@ function gridY(num, gridX) {
 
 function startFill() {
   isFill = true
+  console.log(isFill)
+}
+
+function isFilling(e) {
+  if(isFill) {
+    e.target.style.backgroundColor = "black"
+  }
 }
 
 function startDrawing(e) {
