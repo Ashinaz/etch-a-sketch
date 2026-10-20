@@ -32,6 +32,10 @@ let x = 0
 let y = 0
 let isFill = false
 
+function randomColor() {
+  return "#" + (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, "0")
+}
+
 function gridX(num) { 
   for (let i = 0; i < num; i++) {
     let divGrid = document.createElement("div")
