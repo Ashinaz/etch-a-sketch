@@ -113,12 +113,14 @@ function newCanvas() {
     gridX(grid)
     delCanvas()
     console.log(grid)
+    fillDivs()
   } else {
     grid = (prompt("Please select a grid lower than 100"))
     delGrid()
     gridX(grid)
     delCanvas()
     console.log(grid)
+    fillDivs()
   }
 }
 
