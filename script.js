@@ -60,7 +60,7 @@ function startFill() {
 
 function isFilling(e) {
   if(isFill) {
-    e.target.style.backgroundColor = "black"
+    e.target.style.backgroundColor = randomColor()
   }
 }
 
