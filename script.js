@@ -5,6 +5,7 @@ window.addEventListener("load", function () {
   container.addEventListener("mouseup", stopDrawing)
   drawMode.addEventListener("click", toggleCanvas)
   button.addEventListener("click", newCanvas)
+  const grids = document.querySelectorAll(".gridY")
   for(const grid of grids) {
   grid.addEventListener("mousedown", startFill)
   grid.addEventListener("mousemove", filling)
@@ -29,7 +30,6 @@ let grid = 64
 let isDrawing = false
 let x = 0
 let y = 0
-const grids = document.querySelectorAll(".gridY")
 let isFill = false
 
 function gridX(num) { 
