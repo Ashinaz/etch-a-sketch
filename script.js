@@ -9,6 +9,7 @@ window.addEventListener("load", function () {
   for(const grid of grids) {
   grid.addEventListener("mousedown", startFill)
   grid.addEventListener("mouseover", isFilling)
+  grid.addEventListener("mouseup", stopFilling)
 }
 
 })
@@ -57,6 +58,10 @@ function isFilling(e) {
   if(isFill) {
     e.target.style.backgroundColor = "black"
   }
+}
+
+function stopFilling() {
+  isFill = false
 }
 
 function startDrawing(e) {
