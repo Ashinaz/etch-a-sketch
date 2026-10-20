@@ -5,14 +5,18 @@ window.addEventListener("load", function () {
   container.addEventListener("mouseup", stopDrawing)
   drawMode.addEventListener("click", toggleCanvas)
   button.addEventListener("click", newCanvas)
+  fillDivs()
+})
+
+function fillDivs() {
   const grids = document.querySelectorAll(".gridY")
+  console.log(grids)
   for(const grid of grids) {
   grid.addEventListener("mousedown", startFill)
   grid.addEventListener("mouseover", isFilling)
   grid.addEventListener("mouseup", stopFilling)
 }
-
-})
+}
 
 function toggleCanvas() {
   canvas.classList.toggle("turnOffCanvas")
